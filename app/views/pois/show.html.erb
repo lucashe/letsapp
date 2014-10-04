@@ -1,0 +1,94 @@
+	<div class="row">
+		<div class="">
+			<div class="well panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 text-center">
+							<%= image_tag(@poi.logo_url(:thumbnail),:class=>"center-block img-circle img-thumbnail img-responsive")if @poi.logo?  %>
+							<ul class="list-inline ratings text-center" title="Ratings">
+								<li>
+									<a href="#"><span class="fa fa-star fa-lg"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-star fa-lg"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-star fa-lg"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-star fa-lg"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-star fa-lg"></span></a>
+								</li>
+							</ul>
+						</div>
+						<!--/col-->
+						<div class="col-xs-12 col-sm-8">
+							<h2><%= @poi.name%></h2>
+							<p>
+								<%= @poi.description%>
+							</p>
+							<p>
+								<strong>Website:</strong>
+								<%= @poi.website_url%>
+							</p>
+							<p>
+								<strong>Phone:</strong>
+								<%= @poi.phone_number%>
+							</p>
+														<p>
+								<strong>Address:</strong>
+								<%= %>
+							</p>
+							<!-- <p>
+								<strong>Tags: </strong>
+								<span class="label label-info tags">resort</span>
+								<span class="label label-info tags">family</span>
+								<span class="label label-info tags">beach</span>
+								<span class="label label-info tags">cycling</span>
+							</p> -->
+						</div>
+						<!--/col-->
+						<div class="clearfix"></div>
+						<div class="col-xs-12 col-sm-4">
+							<h2><strong> 207 </strong></h2>
+							<p>
+								<small>Followers</small>
+							</p>
+							<button class="btn btn-success btn-block">
+								<span class="fa fa-plus-circle"></span> Follow
+							</button>
+						</div>
+						<!--/col-->
+						<div class="col-xs-12 col-sm-4">
+							<h2><strong>245</strong></h2>
+							<p>
+								<small>Wanna Go</small>
+							</p>
+							<button class="btn btn-info btn-block">
+								<span class="fa fa-user"></span> Wanna Go
+							</button>
+						</div>
+						<!--/col-->
+						<div class="col-xs-12 col-sm-4">
+							<h2><strong>43</strong></h2>
+							<p>
+								<small>Been There</small>
+							</p>
+							<button type="button" class="btn btn-primary btn-block">
+								<span class="fa fa-gear"></span> Been There
+							</button>
+						</div>
+						<!--/col-->
+					</div>
+					<!--/row-->
+				</div>
+				<!--/panel-body-->
+			</div>
+			<!--/panel-->
+		</div>
+		<!--/col-->
+	</div>
+	<!--/row-->
+
