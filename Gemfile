@@ -50,11 +50,11 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'debugger'
-end
+# group :development do
+  # gem 'better_errors'
+  # gem 'binding_of_caller'
+  # gem 'debugger'
+# end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
