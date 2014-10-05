@@ -35,15 +35,25 @@ end
 
 gem 'devise'
 gem "twitter-bootstrap-rails"
+gem 'simple_form'
+
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'carrierwave'
 gem "fog", "~> 1.3.1"
 
 gem 'mini_magick'
 gem 'bootstrap-sass', '~> 3.2.0'
-gem "socialization"
+gem 'socialization'
 
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'debugger'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

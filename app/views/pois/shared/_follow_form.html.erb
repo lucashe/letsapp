@@ -1,0 +1,15 @@
+<div id="follow_form">
+	<% if user_signed_in?%>
+	<% if current_user.follows?(poi) %>
+	<%= render 'pois/shared/unfollow', :poi => poi%>
+	<% else %>
+	<%= render 'pois/shared/follow', :poi => poi %>
+	<% end %>
+	<% else %>
+	<h2><strong> <%= poi.followers(User).count %></strong></h2>
+	<p>
+		<small>Followers</small>
+	</p>
+	<%= link_to('Follow', new_user_session_path, :class => "btn btn-success btn-block")%>
+	<% end %>
+</div>

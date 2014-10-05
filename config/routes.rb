@@ -1,9 +1,18 @@
 Letsapp::Application.routes.draw do
+
   devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
   resources :pois
+  resources :likes
+  resources :follows do
+    collection do
+      post 'follow_poi'
+      post 'unfollow_poi'
+    end
+  end
+
   root 'home#home'
 
 # The priority is based upon order of creation: first created -> highest priority.

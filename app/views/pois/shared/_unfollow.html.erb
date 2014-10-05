@@ -1,0 +1,6 @@
+<h2><strong> <%= poi.followers(User).count %> </strong></h2>
+<p>
+	<small>Followers</small>
+</p>
+
+<%= link_to('UnFollow', unfollow_poi_follows_path({:poi_id => poi.id}), :method=> "post", :remote => 'true', :class => "btn btn-success btn-block" )%>
